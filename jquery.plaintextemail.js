@@ -41,7 +41,7 @@
 			tagName = $this.get(0).tagName.toLowerCase();
 			href = 'mailto:' + email;
 			if (tagName === 'a') {
-				$this.attr('href', href ).html(innerHtml);
+				$this.attr('href', href).html(innerHtml);
 			} else {
 				a = $('<a>', {href: href, text: innerHtml});
 				$this.empty().append(a);
