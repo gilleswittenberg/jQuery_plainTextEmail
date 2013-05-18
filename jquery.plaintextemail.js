@@ -24,7 +24,7 @@
 
 			// construct email address
 			if (options.localPart && options.domain) {
-				arr = [options.localPart, '@', options.domain, '.', options.topLevel];
+				arr = [options.localPart, '\u0040', options.domain, '\u002E', options.topLevel];
 				email = arr.join('');
 			} else {
 				email = options.email;
