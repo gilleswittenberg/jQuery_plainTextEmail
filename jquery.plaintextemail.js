@@ -14,7 +14,7 @@
 
 		return this.each(function () {
 
-			var array, email, innerHtml, tagName, href, a;
+			var arr, email, innerHtml, tagName, href, a;
 			var $this = $(this);
 
 			// check requirements
@@ -24,8 +24,8 @@
 
 			// construct emailaddress
 			if (options.localPart && options.domain) {
-				array = [options.localPart, '@', options.domain, '.', options.topLevel];
-				email = array.join('');
+				arr = [options.localPart, '@', options.domain, '.', options.topLevel];
+				email = arr.join('');
 			} else {
 				email = options.email;
 			}
