@@ -3,11 +3,11 @@
 	$.fn.plainTextEmail = function (options) {
 
 		var defaults = {
-			email: "",
-			localPart: "",
-			domain: "",
-			topLevel: "com",
-			innerHtml: ""
+			email: '',
+			localPart: '',
+			domain: '',
+			topLevel: 'com',
+			innerHtml: ''
 		};
 
 		options = $.extend(defaults, options);
@@ -24,7 +24,7 @@
 
 			// construct emailaddress
 			if (options.localPart && options.domain) {
-				array = [options.localPart, "@", options.domain, ".", options.topLevel];
+				array = [options.localPart, '@', options.domain, '.', options.topLevel];
 				email = array.join('');
 			} else {
 				email = options.email;
@@ -39,7 +39,7 @@
 
 			// set element
 			tagName = $this.get(0).tagName.toLowerCase();
-			href = "mailto:" + email;
+			href = 'mailto:' + email;
 			if (tagName === 'a') {
 				$this.attr('href', href ).html(innerHtml);
 			} else {
