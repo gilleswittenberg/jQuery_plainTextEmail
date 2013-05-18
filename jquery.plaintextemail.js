@@ -22,7 +22,7 @@
 				return false;
 			}
 
-			// construct emailaddress
+			// construct email address
 			if (options.localPart && options.domain) {
 				arr = [options.localPart, '@', options.domain, '.', options.topLevel];
 				email = arr.join('');
